@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- This is a form submission page for Organic Farmers Market -->
+<!-- Made by Sharjeel_Sohail_c3316130 -->
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+<html>
+   <head>
+   <meta charset="UTF-8">
+   <title> Form Submission page </title>
+   <style type="text/css">
+      h3 {text-decoration:underline}
+      a {text-decoration:underline}
+   </style>
+
+   <script type="text/JavaScript">
+   function checkRequired()
+   {
+	if(document.feedback.firstname.value == ""){
+	   alert("Please provide all required (*) fields!");
+	   return false;
+	}if(document.feedback.lastname.value == ""){
+	   alert("Please provide all required (*) fields!");
+	   return false;
+	}if(document.feedback.email.value == ""){
+	   alert("Please provide all required (*) fields!");
+	   return false;
+	}if(document.feedback.contact.value == ""){
+	   alert("Please provide all required (*) fields!");
+	   return false;
+	}if(document.feedback.age.selectedIndex == 0){
+	   alert("Please provide all required (*) fields!");
+	   return false;
+	}if(!document.feedback.initial[0].checked &&
+	    !document.feedback.initial[1].checked &&
+	    !document.feedback.initial[2].checked){
+		alert("Please provide all required (*) fields!");
+		return false;
+	} else {
+	   alert("Thank you! Your submission has been received.");
+	   return true;
+	}
+   }/*checkName()*/
+   </script>
+   </head>
+
+   <body>
+     <h1> Customer Satisfaction Survey </h1>
+     <hr>
+     <p> As part of our ongoing evaluation of our services please would you complete the following questions. This would
+     also require some of your personal data. The information will be treated confidentally. </p>
+     <fieldset>
+
+	<h3> Personal Information </h3>
+	<legend> Customer feedback form: </legend>
+	<form name="feedback" action="http://evc-cit.info/cgi-bin/echoform.cgi" method="get">
+	<div>
+	   i) First Name*
+	   <input type="text" size="20" name="firstname"/>
+	   ii) Last Name*
+	   <input type="text" size="20" name="lastname"/><br><br>
+	</div>
+
+	<div>
+	   iii) Email*
+	   <input type="text" size="45" name="email"/><br><br>
+	</div>
+
+	<div>
+	   iv) Contact*
+	   <input type="text" size="20" name="contact"/><br><br>
+	</div>
+
+	   <div>
+	      v) Age range*:
+	      <div id="age">
+		<select name="age">
+		   <option>Select one</option>
+		   <option>Below 20</option>
+		   <option>20-30</option>
+		   <option>31-40</option>
+		   <option>41-50</option>
+		   <option>Above 50</option>
+		</select>
+	      </div>
+	   </div><br>
+
+	<div>
+	   vi) Address Line 1:
+	   <input type="text" size="45" name="address1"/><br><br>
+
+	   vii) Address Line 2:
+	   <input type="text" size="45" name="address2"/>
+
+	   viii) Post Code
+	   <input type="text" size="10" name="postcode"/><br>
+	</div>
+	   
+<!-- Survey Questions from here -->
+
+	   <h3> Customer feedback </h3>
+	   <div id="feedback">
+	   i) This feedback is a:* 
+	   Suggestion
+	   <input type="checkbox" name="initial"/>
+
+	   Compliment
+	   <input type="checkbox" name="initial"/>
+
+	   Complain
+	   <input type="checkbox" name="initial"/><br>
+	   </div>
+
+	   <p>
+		ii) Overall, How easy to use do you find this website?<br>
+		Very easy to use
+		<input type="radio" name="overall"/><br>
+		Easy to use
+		<input type="radio" name="overall"/><br>
+		Neither easy nor difficult
+		<input type="radio" name="overall"/><br>
+		Difficult to use
+		<input type="radio" name="overall"/><br>
+	   </p>
+
+	   <p>
+		iii) How would you describe this website in one or more words?<br>
+		&nbsp; &nbsp;
+		<textarea rows="2" cols="50"> -type here- </textarea>
+	   </p>
+
+	   <p>
+	   iv) We would like to hear more from you! <br>
+	   &nbsp; &nbsp;
+	   <textarea rows="15" cols="50"> Please write your detail feedback here. </textarea><br>
+	   </p>
+
+	   <p>
+		v) Are you satisfied with our service?<br>
+		Yes
+		<input type="checkbox" name="satisfaction"/>
+		No
+		<input type="checkbox" name="satisfaction"/>
+	   </p>
+	   <p>
+		vi) Would you like a response from us?
+		<select>
+		   <option>Yes</option>
+		   <option>No</option>
+		</select>
+	   </p>
+
+	   <span>
+	   <input type="submit" value="Submit" onClick="return checkRequired();"/>
+	   <input type="reset" value="Reset" />
+	   </span>
+
+	   <hr  />
+	   <span> For privacy purposes, Visit <a href="https://www.visser.com.au/blog/generic-privacy-policy-for-australian-websites"> Privacy policy for Australian websites </a> </span>
+      </fieldset>     
+   </body>
+</html>

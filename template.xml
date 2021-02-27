@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE farmers_market
+[
+<!-- This is just a XML template file -->
+<!-- Sharjeel_sohail_3316130 -->
+<!-- date: 24/01/19 -->
+
+   <!ELEMENT farmers_market (farm+)>
+   <!ELEMENT farm (goodstype, farmname, farmlogo?, farmview, fdescription*, 
+   mission, url, address, contact+, mail, delivery, goods+)>
+   <!ATTLIST farm code CDATA #REQUIRED>
+   <!ELEMENT goodstype (#PCDATA)>
+   <!ATTLIST goodstype organics CDATA #REQUIRED> 
+   <!ELEMENT farmname (#PCDATA)>
+   <!ELEMENT farmlogo (#PCDATA)>
+   <!ATTLIST farmlogo size CDATA #REQUIRED>
+   <!ELEMENT farmview (#PCDATA)>
+   <!ATTLIST farmview size CDATA #REQUIRED>
+   <!ELEMENT fdescription (#PCDATA)>
+   <!ELEMENT mission (#PCDATA)>
+   <!ELEMENT url (#PCDATA)>
+   <!ELEMENT address (#PCDATA)>
+   <!ATTLIST address state CDATA #REQUIRED>
+   <!ELEMENT contact (#PCDATA)>
+   <!ELEMENT mail (#PCDATA)>
+   <!ATTLIST mail type CDATA #REQUIRED>
+   <!ELEMENT delivery (minprice, deliveryfee)>
+   <!ATTLIST delivery status CDATA #REQUIRED>
+   <!ELEMENT minprice (#PCDATA)>
+   <!ELEMENT deliveryfee (#PCDATA)>
+   <!ELEMENT goods (veg1, pic1, veg2, pic2)>
+   <!ATTLIST goods type CDATA #REQUIRED>
+   <!ELEMENT veg1 (#PCDATA)>
+   <!ELEMENT pic1 (#PCDATA)>
+   <!ELEMENT veg2 (#PCDATA)>
+   <!ELEMENT pic2 (#PCDATA)>
+]>
+
+<farmers_market>
+   <farm code= "farm_no1">
+	<goodstype organics="Vegetables"> XX </goodstype>
+	<farmname> XX </farmname>
+	<farmlogo size="300px"> XX </farmlogo>
+	<farmview size="800px"> XX </farmview>
+	<fdescription> XXX </fdescription>
+	<mission> XX </mission>
+	<url> XX </url>
+	<address state="NSW"> XX </address>
+	<contact> XX </contact>
+	<mail type="business"> XX </mail>
+	<delivery status="Online delivery">
+	   <minprice> $0 </minprice>
+	   <deliveryfee> $0 </deliveryfee>
+	</delivery>
+	<goods type="Vegetable">
+	   <veg1> XX </veg1>
+	   <pic1> XX </pic1>
+	   <veg2> XX </veg2>
+	   <pic2> XX </pic2>
+	</goods>
+   </farm>
+   <farm code= "farm_no2">
+	<goodstype organics="Vegetables"> XX </goodstype>
+	<farmname>XX</farmname>
+	<farmlogo size="300px"> XX </farmlogo>
+	<farmview size="800px"> XX </farmview>
+	<fdescription> XX </fdescription>
+	<mission> XX </mission>
+	<url> XX </url>
+	<address state="NSW"> XX </address>
+	<contact> XX </contact>
+	<mail type="business"> XX </mail>
+	<delivery status="Online delivery">
+	   <minprice> $0 </minprice>
+	   <deliveryfee> $0 </deliveryfee>
+	</delivery>
+	<goods type="Vegetable">
+	   <veg1> xx </veg1>
+	   <pic1> xx </pic1>
+	   <veg2> xx </veg2>
+	   <pic2> xx </pic2>
+	</goods>
+   </farm>
+</farmers_market>

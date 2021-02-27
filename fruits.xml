@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xslt.xsl"?>
+   <!-- XML file 2 / Fruits -->
+   <!-- Sharjeel_sohail_3316130 -->
+<!DOCTYPE farmers_market[
+   <!ELEMENT farmer_market (farm+)>
+   <!ELEMENT farm (goodstype, farmname, farmlogo?, farmview, fdescription*, 
+   mission, url, address, contact+, mail, delivery, goods+)>
+   <!ATTLIST farm code CDATA #REQUIRED>
+   <!ELEMENT goodstype (#PCDATA)>
+   <!ATTLIST goodstype organics CDATA #REQUIRED> 
+   <!ELEMENT farmname (#PCDATA)>
+   <!ELEMENT farmlogo (#PCDATA)>
+   <!ATTLIST farmlogo size CDATA #REQUIRED>
+   <!ELEMENT farmview (#PCDATA)>
+   <!ATTLIST farmview size CDATA #REQUIRED>
+   <!ELEMENT fdescription (#PCDATA)>
+   <!ELEMENT mission (#PCDATA)>
+   <!ELEMENT url (#PCDATA)>
+   <!ELEMENT address (#PCDATA)>
+   <!ATTLIST address state CDATA #REQUIRED>
+   <!ELEMENT contact (#PCDATA)>
+   <!ELEMENT mail (#PCDATA)>
+   <!ATTLIST mail type CDATA #REQUIRED>
+   <!ELEMENT delivery (minprice, deliveryfee)>
+   <!ATTLIST delivery status CDATA #REQUIRED>
+   <!ELEMENT minprice (#PCDATA)>
+   <!ELEMENT deliveryfee (#PCDATA)>
+   <!ELEMENT goods (goodsname, goodspicture)>
+   <!ATTLIST goods type CDATA #REQUIRED>
+   <!ELEMENT goodsname (#PCDATA)>
+   <!ELEMENT goodspicture (#PCDATA)>
+]>
+
+<farmer_market>
+   <farm code= "farm_no4">
+	<goodstype organics="fruits"> fruits </goodstype>
+	<farmname> Daisy Mango farms </farmname>
+	<farmlogo size="300px">images/DaisymangofarmsL.jpg</farmlogo>
+	<farmview size="800px">images/Daisymangofarms.jpg</farmview>
+	<fdescription> 
+	   Daisy mango farm was founded in 2003 by Daisy shah, with a wealth of experience in fresh fruit production
+	   specially in mangoes. Today, It is one of the leading distributor around Australia.
+	</fdescription>
+	<mission>
+	   Our aim is to achieve long term fulfilment through our supply chain while developing our network and brand. This will
+	   help Daisy mangoes as a leading produce maker.
+	</mission>
+	<url> www.Daisyfarms.com </url>
+	<address state="NSW"> 672, Medowie road, Medowie NSW. </address>
+	<contact> 0451839200 </contact>
+	<mail type="business"> daisyfarmspvt@gmail.com </mail>
+	<delivery status="Online delivery">
+	   <minprice> $20 </minprice>
+	   <deliveryfee> $5 </deliveryfee>
+	</delivery>
+	<goods type="fruits">
+	   <goodsname> Alphonso Mango </goodsname>
+	   <goodspicture> mangofarm1.jpg </goodspicture>
+	</goods>
+   </farm>
+   <farm code="farm_no5">
+	<goodstype organics="fruits"> fruits </goodstype>
+	<farmname> Smiths farming </farmname>
+	<farmlogo size="300px">images/smithsfarmingL.jpg </farmlogo>
+	<farmview size="800px">images/smithsfarming.jpg</farmview>
+	<fdescription> 
+	   Our family farming business is based at maitland in New south wales, in the heart of pineapple country. We've
+	   been growing pineapples here since founder Jeff Said started producing pineapples in the 1960's.
+	</fdescription>
+	<mission>
+	   The main mission of our is to provide best pineapples around the globe, With the fine quality and packing.
+	</mission>
+	<url> www.smithsfarming.com.au </url>
+	<address state="NSW"> 3137, Maitland road, Maitland, NSW. </address>
+	<contact> 0474883547 </contact>
+	<mail type="business"> smithsfarming_pvt@gmail.com </mail>
+	<delivery status="Online delivery">
+	   <minprice> $25 </minprice>
+	   <deliveryfee> $7 </deliveryfee>
+	</delivery>
+	<goods type="fruit">
+	   <goodsname> pineapples </goodsname>
+	   <goodspicture> pineapplefarm5.jpg </goodspicture>
+	</goods>
+   </farm>
+   <farm code= "farm_no6">
+	<goodstype organics="fruits"> fruits </goodstype>
+	<farmname> Loco cherry farms </farmname>
+	<farmlogo size="300px">images/lococherryfarmsL.jpg</farmlogo>
+	<farmview size="800px">lococherryfarms.jpg</farmview>
+	<fdescription> 
+	   Loco cherry farms has a dedicated team of 40 staff not only nurture the farm but also provide guest services
+	   including guided tours, cafe dining, and specialist retail. Loco farms is owned by Jerry Loco since 1988.
+	</fdescription>
+	<mission>
+	    The main goal of loco farms is to provide best customer service with the best quality of fruits.
+	</mission>
+	<url> www.locofarms.org.au </url>
+	<address state="NSW"> 3311, Glace road, woy woy, NSW. </address>
+	<contact> 0420343197 </contact>
+	<mail type="business"> lococherryfarms@yahoo.com </mail>
+	<delivery status="Online delivery">
+	   <minprice> $20 </minprice>
+	   <deliveryfee> $3 </deliveryfee>
+	</delivery>
+	<goods type="fruit">
+	   <goodsname> Cherry </goodsname>
+	   <goodspicture> cherryfarm6.jpg </goodspicture>
+	</goods>
+   </farm>
+</farmer_market>

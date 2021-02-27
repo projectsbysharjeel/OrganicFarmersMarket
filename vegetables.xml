@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="xslt.xsl"?>
+<!-- XML file 1 / Vegetables -->
+<!-- Sharjeel_sohail_3316130 -->
+<!-- Date: 24/01/19 -->
+
+<!DOCTYPE farmers_market [
+   <!ELEMENT farmer_market (farm+)>
+   <!ELEMENT farm (goodstype, farmname, farmlogo?, farmview, fdescription*, 
+   mission, url, address, contact+, mail, delivery, goods+)>
+   <!ATTLIST farm code CDATA #REQUIRED>
+   <!ELEMENT goodstype (#PCDATA)>
+   <!ATTLIST goodstype organics CDATA #REQUIRED> 
+   <!ELEMENT farmname (#PCDATA)>
+   <!ELEMENT farmlogo (#PCDATA)>
+   <!ATTLIST farmlogo size CDATA #REQUIRED>
+   <!ELEMENT farmview (#PCDATA)>
+   <!ATTLIST farmview size CDATA #REQUIRED>
+   <!ELEMENT fdescription (#PCDATA)>
+   <!ELEMENT mission (#PCDATA)>
+   <!ELEMENT url (#PCDATA)>
+   <!ELEMENT address (#PCDATA)>
+   <!ATTLIST address state CDATA #REQUIRED>
+   <!ELEMENT contact (#PCDATA)>
+   <!ELEMENT mail (#PCDATA)>
+   <!ATTLIST mail type CDATA #REQUIRED>
+   <!ELEMENT delivery (minprice, deliveryfee)>
+   <!ATTLIST delivery status CDATA #REQUIRED>
+   <!ELEMENT minprice (#PCDATA)>
+   <!ELEMENT deliveryfee (#PCDATA)>
+   <!ELEMENT goods (goodsname, goodspicture)>
+   <!ATTLIST goods type CDATA #REQUIRED>
+   <!ELEMENT goodsname (#PCDATA)>
+   <!ELEMENT goodspicture (#PCDATA)>
+]>
+
+<farmer_market>
+   <farm code= "farm_no1">
+	<goodstype organics="Vegetables"> vegetables </goodstype>
+	<farmname> Festive Veggie Farms </farmname>
+	<farmlogo size="300px">images/festiveveggiefarmsL.jpg </farmlogo>
+	<farmview size="800px">images/festiveveggiefarms.jpg</farmview>
+	<fdescription> 
+	   Festive Veggie Farms is being operated by Kelly; daughter of late Bob lee since 25 years. 
+	   The main mission is to produce rich quality veggies with the help of Solar panels; 
+	   which is just installed to reduce the carbon foot print on earth.
+	</fdescription>
+	<mission>
+	   Our mission is to grow and produce safe and healthy organic vegetables and improving our land while continually decreasing the carbon footprint
+	</mission>
+	<url> www.festiveVeggiefarms.org </url>
+	<address state="NSW"> 27, Main dudley road, Newcastle NSW. </address>
+	<contact> 0451645687 </contact>
+	<mail type="business"> Festivevegfarms@gmail.com </mail>
+	<delivery status="Online delivery">
+	   <minprice> $25 </minprice>
+	   <deliveryfee> $5 </deliveryfee>
+	</delivery>
+	<goods type="Vegetable">
+	   <goodsname> Spinach </goodsname>
+	   <goodspicture> Spinachfarm1.jpg </goodspicture>
+	</goods>
+   </farm>
+   <farm code= "farm_no2">
+	<goodstype organics="Vegetables"> vegetables </goodstype>
+	<farmname> Malinda's Farming </farmname>
+	<farmlogo size="300px">images/malindasfarmingL.jpg</farmlogo>
+	<farmview size="800px">images/malindasfarming.jpg</farmview>
+	<fdescription> 
+	   Malinda's Farm is is being owned my Malinda since 12 years. The farm is famous for its super 
+	   fine quality of vegetables. This farm has 3 branches all over Australia.
+	</fdescription>
+	<mission>
+	   The main mission of Malinda's farm is to maintain his goodwill by continue producing fresh veggies for all the age groups reside in Australia. 
+	</mission>
+	<url> www.malindasfarming.com.au </url>
+	<address state="NSW"> 2163, Pacific highway, heatherbrae, NSW. </address>
+	<contact> 0405788547 </contact>
+	<mail type="business"> malinda_farming@hotmail.com </mail>
+	<delivery status="Online delivery">
+	   <minprice> $32 </minprice>
+	   <deliveryfee> $7 </deliveryfee>
+	</delivery>
+	<goods type="Vegetable">
+	   <goodsname> cucumber </goodsname>
+	   <goodspicture> cucumberfarm2.jpg </goodspicture>
+	</goods>
+   </farm>
+   <farm code= "farm_no3">
+	<goodstype organics="Vegetables"> vegetables </goodstype>
+	<farmname> Daniel Veg farm </farmname>
+	<farmlogo size="300px">images/danielvegfarmL.jpg</farmlogo>
+	<farmview size="800px">images/danielvegfarm.jpg</farmview>
+	<fdescription> 
+	  Daniel Veg farm is owned by greg; Daniel's son. The farm is expert in producing natural organic vegetables, 
+	  from growing to selling, We make sure our produced vegetable remains fresh and hygenic. 
+	</fdescription>
+	<mission>
+	   The main mission of Daniel's farm is to serve their customers the way their audeince wants. To let it go like this, 
+	   they are continuously improving their service.
+	</mission>
+	<url> www.danielvegfarm.org.au </url>
+	<address state="NSW"> 2030, Pacific highway, Maitland, NSW. </address>
+	<contact> 0415898414 </contact>
+	<mail type="business"> danielvegfarms@hotmail.com </mail>
+	<delivery status="Online delivery">
+	   <minprice> $30 </minprice>
+	   <deliveryfee> $5 </deliveryfee>
+	</delivery>
+	<goods type="Vegetable">
+	   <goodsname> Carrots </goodsname>
+	   <goodspicture> carrotsfarm3.jpg </goodspicture>
+	</goods>
+   </farm>
+</farmer_market>
