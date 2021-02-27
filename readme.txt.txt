@@ -3,6 +3,8 @@ Student no: c3316130
 type: Assignment number 2
 Date: 24/01/2019
 
+Note: Main file is Index, which then follows subfiles 
+
 1) Files:
 Assignment cover sheet
 form.html
